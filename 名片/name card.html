@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名片</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <style>
+    body {
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .row {
+      position: relative;
+      height: 550px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .col-sm-4 {
+      background: url(./pic.png) center/cover;
+    }
+
+    .top-corner {
+      position: absolute;
+      top: -16%;
+      right: -82%;
+    }
+
+    .top-corner img {
+      transform: rotate(180deg);
+    }
+
+    .bottom-corner {
+      position: absolute;
+      bottom: -15%;
+      left: -8%;
+    }
+  </style>
+</head>
+
+<body class="d-flex  align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 h-100"></div>
+      <div class="col-sm-8 h-100">
+        <div class="ms-5 ps-5 mt-5 pt-5">
+          <h5>Front-End Developer</h5>
+          <h1 style="font-size: 60px;">Tingya Chen</h1>
+          <h2 style="letter-spacing: 12px;">泰山職訓局</h2>
+        </div>
+        <div class="ms-5 ps-5 mt-5 pt-2" style="font-size: 18px;">
+          住址 : 新北市泰山區貴子里致遠新村55之1號<br>
+          電話 : 02-2901-8274<br>
+          E-Mail : tingya@example.cc<br>
+          網站 : https://www.tingya.example.cc/<br>
+        </div>
+      </div>
+      <div class="top-corner d-none d-sm-block"><img src="./corner.png"></div>
+      <div class="bottom-corner d-none d-sm-block"><img src="./corner.png"></div>
+    </div>
+  </div>
+</body>
+
+</html>
